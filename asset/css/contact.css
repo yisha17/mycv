@@ -1,9 +1,10 @@
 body{
-    background-image: url("./asset/image/5.jpg");
+    background-image: url("../image/2.jpg");
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border: 0;
 } 
 header a{
 	text-decoration: none;
@@ -42,12 +43,25 @@ img{
     width: 70%;
     padding: 10px;
     clear: left;
+    border-bottom: solid 4px brown;
+}
+#contact h3{
+    font-family: sans-serif;
+    margin-left: 70px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+
+
 }
 #form1{
     border: solid 1px peru;
     padding: 20px 10px 20px 10px;
     width: 90%;
     border-radius: 8px;
+    margin-left: 40px;
+    position: relative;
     
 }       
 #form1 label{
@@ -75,11 +89,31 @@ img{
     font-size: 18px;
     border-radius: 5px;
 }
+#form1 select{
+    width: 75%;
+    padding: 0.5rem;
+    border: solid 2px brown;
+    font-size: 18px;
+    border-radius: 5px;
+}
 #btn{
     text-transform: uppercase;
     background-color: black;
     color: white;
-    margin-top: 10px;
-    cursor: pointer;
-    width: 30px;
+    margin-top: 15px;
+    width: auto;
+    height: 40px;
 }
+iframe{
+    margin-left: 50px;
+    margin-top: 20px;   
+}
+#footer{
+    border-top: solid 2px brown;
+    border-bottom:solid 2px brown ;
+    padding: 13px;
+}
+
+
+
+

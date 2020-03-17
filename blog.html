@@ -13,18 +13,20 @@
                 <li><a href="Index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="blog.html">Blog</a> </li>   
-                <li><a href="photos.html">Photos</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
        </nav> 
     </header>
     <div id="container">
         <section>
-            <p class="title">first post </p>
+            <p class="title">The use of Relative Size on styling</p>
         <article>
         
         <p class="date">
-        this is test for css. Lorem ipsum, dolor sit amet consectetur adipisicing elit. At provident et accusamus sint harum, nulla vel sapiente magni!
-         Hic molestiae libero rerum illum est vitae quibusdam fuga provident sit nihil?
+        Many web designers rise que stions about whether it matter to use relative sizing on styleing sheet or not for providing best responsive website. 
+        In my opinion there is a big differene when we use relative size measurment and   
+        matter to use relative size(%,em,rem) one styling the size of an element so that
+the element is responsive 
         </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates quam vitae provident ratione aut ducimus aperiam fugit deleniti commodi, repellendus fuga. Quia, culpa expedita. Odio, ab pariatur? Quaerat, minus?</p>
         </article>
@@ -44,15 +46,60 @@
         
     </section>
     <section>
-        <p class="title">third post </p>
+        <p class="title">Changes in CSS3 </p>
         <article>
         
         <p class="date">
-        this is test for css. Lorem ipsum, dolor sit amet consectetur adipisicing elit. At provident et accusamus sint harum, nulla vel sapiente magni!
-         Hic molestiae libero rerum illum est vitae quibusdam fuga provident sit nihil?
+        <h4>1. CSS3 Selectors</h4>
+        Selectors are at the heart of CSS. Originally, CSS allowed the matching of elements by type, class, and/or ID. CSS2.1 added pseudo-elements, pseudo-classes, and combinators. With CSS3, we can target almost any element on the page with a wide range of selectors.
+
+        CSS2 introduced several <strong>attribute selectors</strong> . These allow for matching elements based on their attributes. CSS3 expands upon those attribute selectors.Three more attribute selectors were added in CSS3; they allow for substring selection. <br>
+        1.Matches any element E whose attribute attr starts with the value val. In other words, the val matches the beginning of the attribute value. <br>
+        2.Matches any element E whose attribute attr ends in val. In other words, the val matches the end of the attribute value. <br>
+        3.Matches any element E whose attribute attr matches val anywhere within the attribute. It is similar to E[attr~=val], except the val can be part of a word. <br>
+        <h5>Pseudo-classes</h5>
+        A few more pseudo-class selectors were added in CSS3. One is the <strong>:root </strong> selector, which allows designers to point to the root element of a document. In HTML, it would be <html>. Since :root is generic, it allows a designer to select the root element of an XML document without necessarily knowing it’s name. 
+            To permit scrollbars when needed in a document, this rule would work. <br>
+            As a complement to the :first-child selector, the <strong>:last-child</strong>  was added. With it one can select the last element named of a parent element. For a site with articles contained in <div class=’article’></div> tags, where each has a last paragraph with some information that needs to be uniformly stylized, this rule would change the font for last paragraph of each article. <br>
+            A new user interaction pseudo-class selector was added, the :target selector. To draw the user’s attention to a span of text when the user clicks on a same-page link, a rule like the first line below would work nicely; the link would look like the second line, the highlighted span like the third. <br>
+            A functional notation for selecting specified elements that fail a test has been created. The negation pseudo-class selector, :not can be coupled with almost any other selector that has been implemented. For example to put a border around images that don’t have a border specified, use a rule like this. <br>
+            <h4>2. CSS3 Colors</h4>
+            CSS3 brings with it support for some new ways of describing colours . Prior to CSS3, we almost always declared colours using the hexadecimal format (#FFF, or #FFFFFF for white). It was also possible to declare colours using the rgb() notation, providing either integers (0–255) or percentages. <br>
+            The color keyword list has been extended in the CSS3 color module to include 147 additional keyword colors (that are generally well supported), CSS3 also provides us with a number of other options: HSL, HSLA, and RGBA. The most notable change with these new color types is the <strong>ability to declare semitransparent colors</strong>. <br>
+            <h5>1. RGBA :</h5>
+            RGBA works just like RGB, except that it adds a fourth value: alpha, the opacity level or alpha transparency level. The first three values still represent red, green, and blue. For the alpha value, 1 means fully opaque, 0 is fully transparent, and 0.5 is 50% opaque. You can use any number between 0 and 1 inclusively. <br>
+            <h5>2. HSL and HSLA</h5>
+            HSL stands for hue, saturation, and lightness. Unlike RGB, where you need to manipulate the saturation or brightness of a color by changing all three color values in concert, with HSL you can tweak either just the saturation or the lightness while keeping the same base hue. The syntax for HSL comprises an integer value for hue, and percentage values for saturation and lightness. <br>
+            The hsl( ) declaration accepts three values:
+
+— The hue in degrees from 0 to 359. Some examples are: 0 = red, 60 = yellow, 120= green, 180 = cyan, 240 = blue, and 300 = magenta. <br>
+
+— The saturation as a percentage with 100% being the norm. Saturation of 100% will be the full hue, and saturation of 0 will give you a shade of gray — essentially causing the hue value to be ignored. <br>
+
+— A percentage for lightness with 50% being the norm. A lightness of 100% will be white, 50% will be the actual hue, and 0% will be black. <br>
+
+The a in hsla( ) here also functions the same way as in rgba( )
+<h5>3.Opacity</h5>
+In addition to specifying transparency with HSLA and RGBA colors (and soon, eight-digit hexadecimal values), CSS3 provides us with the opacity property. opacity sets the opaqueness of the element on which it’s declared, similar to alpha. <br>
+ <h4>3. Rounded Corners: border-radius</h4>
+ The border-radius property lets you create rounded corners without the need for images or additional markup.The border-radius property is actually a shorthand. For our “a” element, the corners are all the same size and symmetrical.
+ <h4>4. Drop Shadows</h4>
+ CSS3 provides the ability to add drop shadows to elements using the box-shadow property. This property lets you specify the color, height, width, blur, and offset of one or multiple inner and/or outer drop shadows on your elements. <br>
+ <h4>5. Text Shadow</h4>
+ text-shadow adds shadows to individual characters in text nodes. Prior to CSS 3, this would be done by either using an image or duplicating a text element and then positioning it. <br>
+
+ <h4>6. Linear Gradients</h4>
+ W3C added the syntax for generating linear gradients with CSS3.You can even specify direction in degrees e.g. 60deg instead of to right. <br>
+
+ <h4>7. Radial Gradients</h4>
+ Radial gradients are circular or elliptical gradients. Rather than proceeding along a straight axis, colors blend out from a starting point in all directions.
+ <h4>8.Multiple Background Images</h4>
+ In CSS3, there’s no need to include an element for every background image; it provides us with the ability to add more than one background image to any element, even to pseudo-elements.
+
+
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptates quam vitae provident ratione aut ducimus aperiam fugit deleniti commodi, repellendus fuga. Quia, culpa expedita. Odio, ab pariatur? Quaerat, minus?</p>
-        <p class="date">25/12/2020</p>
+        
+        <p class="date">3/17/2020</p>
         </article>
         
     </section>
