@@ -2,7 +2,7 @@
 body{
     background-color:white;
     border : solid 10px lightgray;
-    padding: ;
+    padding:10px ;
     margin: 10px 20px;
 }
 header{
@@ -11,6 +11,20 @@ header{
     top: 0;
     right: 0;
     width: 100%;
+}
+header a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+    color: maroon;
+}
+header a:hover{
+	color:red;
+	font-weight: bold;
+}
+.home a{
+	font-weight: bold;
+	color:rgb(119, 0, 255);
 }
 p{
     color: green;

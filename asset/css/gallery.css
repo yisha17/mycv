@@ -11,6 +11,14 @@ header{
     right: 0;
     width: 100%;
 }
+header a:hover{
+	color:red;
+	font-weight: bold;
+}
+.home a{
+	font-weight: bold;
+	color:rgb(119, 0, 255);
+}
 #ty{
     background-color: lime;
     margin-top: auto;
@@ -27,6 +35,6 @@ nav>ul>li{
 }
 img{
     width: 30%;
-    float: right;
+    float: unset;
     margin: 1.33%;
 }
