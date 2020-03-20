@@ -24,14 +24,26 @@
         <article>
         
         <p class="date">
-        Many web designers rise que stions about whether it matter to use relative sizing on styleing sheet or not for providing best responsive website. 
-        In my opinion there is a big differene when we use relative size measurment and   
-        matter to use relative size(%,em,rem) one styling the size of an element so that
-the element is responsive 
+        <h2>px(Absolute sizing)</h2>
+        If we need fine-grained control, sizing fonts in pixel values (px) is an excellent choice. On a computer screen, it doesn't get any more accurate than a single pixel. With sizing fonts in pixels, we are literally telling browsers to render the letters exactly that number of pixels in height: 
+        Windows, Mac, aliased, anti-aliased, cross-browsers, doesn't matter, a font set at 14px will be 14px tall. But that isn't to say there won't still be some variation. <br>
+        Due to the nature of pixel values, they do not cascade. If a parent element has an 18px pixel size and the child is 16px, the child will be 16px. However, font-sizing settings can be using in combination. For example, if the parent was set to 16px and the child was set to larger, the child would indeed come out larger than the parent. <br>
+        Pixels have gotten a bad wrap in the past for accessibility and usability concerns. In IE 6 and below, font-sizes set in pixels cannot be resized by the user. That means that us hip young healthy designers can set type in 12px and read it on the screen just fine, but when folks a little longer in the tooth go to bump up the size so they can read it, they are unable to. 
+        But right now in the time of not needing to care about this anymore.
+        <h2>em,%(Relative sizing)</h2>
+            <h3>em</h3>
+            If we basically want to use pixels but don't like the accessibility problems, em's may be the ticket for you.
+
+        Em's aren't just for fonts, it's a unit of measure that we can use for any other length (height, width, etc). Elastic width sites use em values for everything, which essentially makes the site "zoomable", meaning that when we bump the font-size up everything bumps up all the way down to the width of the site. Em's have a direct relationship to each other in this way. If we have a box that is 10em in height, and a font inside that is 1em in size, it will take up exactly 1/10 the height of that box.
+        That exact proportional relationship makes em values a powerful web design technique. <br>
+        Em do cascade. Every em value is relative to its parents value. If we are using em's as a straight substitution for pixel values, this can cause problems. For example, we might set both your "p" (paragraph) and "li" (list item) font-sizes to be 1.2em. Looks great for today, but tomorrow some content is published to the site that has a paragraph inside a list item. Those two values will cascade (1.2 x 1.2) and that list item will be bigger in font-size than any of the others. At this time No way around that, other than removing the tag.
+
+            <h3>%</h3>
+            Percentages are fairly obvious in how they work. If a parent has the font-size of 20px and the child has a font-size of 50%, it will come out to 10px. Just like em's the very nature of percentage sizing is that it is relative. It also cascades in the same way, so the very problem described above of the list item and the paragraph item applies here as well.
         </p>
         
         </article>
-        <p class="date">11/12/2020</p>
+        <p class="date">3/19/2020</p>
     </section>
     <section id="top">
         <p class="title">second post </p>

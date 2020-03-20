@@ -53,7 +53,7 @@ header a:hover{
 	object-fit:cover;
 }
 .child a:hover{
-	color:red;
+	color:olive;
     font-weight: bold;
 }
 .child{
@@ -64,6 +64,7 @@ header a:hover{
     height: auto;
     padding: 20px;
     border-radius: 30px;
+    background-color: ghostwhite;
 }
 .child a{
     text-transform: uppercase;
